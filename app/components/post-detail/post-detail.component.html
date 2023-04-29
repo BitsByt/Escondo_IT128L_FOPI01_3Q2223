@@ -1,0 +1,8 @@
+<div class="post-detail">
+    <h1 class="post-title">{{ post?.title }}</h1>
+    <div class="post-meta">
+      <span class="post-author">by {{ post?.firstName }} {{ post?.lastName }}</span>
+      <span class="post-date">on {{ post?.dateCreated | date:'mediumDate' }}</span>
+    </div>
+    <div class="post-body">{{ post?.body }}</div>
+  </div>
